@@ -13,3 +13,8 @@ def get_contact(request):
 # Get Contact Thank You Page
 def get_contact_thanks(request):
    return render(request, 'contacts/contact_thanks.html')
+
+# Get About page
+def get_About(request):
+   return render(request, 'About/About.html')
+

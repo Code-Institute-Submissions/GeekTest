@@ -2,6 +2,8 @@
 {% load staticfiles %}
 {% block content %}
 
+
+
   <div class="container">
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -17,24 +19,24 @@
       <div class="item active">
         <img src="{% static "images/geek003.jpg" %}" alt="GEEK!!!" style="height: 250px">
           <div class="carousel-caption">
-              <h3>hello world</h3>
-              <p>hwuhfufhufhurhf</p>
+              <h1>GEEK SHOP</h1>
+
           </div>
       </div>
 
       <div class="item">
       <img src="{% static "images/geek004.jpg" %}" alt="GEEK!!!" style="height: 250px">
           <div class="carousel-caption">
-              <h3>hello world</h3>
-              <p>hwuhfufhufhurhf</p>
+              <h1>GEEK SHOP</h1>
+
           </div>
       </div>
 
       <div class="item">
          <img src="{% static "images/geek005.jpg" %}" alt="GEEK!!!" style="height: 250px">
           <div class="carousel-caption">
-              <h3>hello world</h3>
-              <p>hwuhfufhufhurhf</p>
+              <h1>GEEK SHOP</h1>
+
           </div>
       </div>
     </div>
@@ -66,16 +68,18 @@
     </div>
 
 <hr>
-         {% if user.is_authenticated %}
-    <div class="col-md-12">
-            <a href="{% url 'register' %}" class="btn btn-info" style=" display: block; text-align: center">
-                <span style="font-size: 50px; display: block; " class="glyphicon glyphicon-thumbs-up" ></span> <h3>Register here</h3>
+
+   <center> <div class="col-md-12">
+
+                <a href="{% url 'register' %}" class="btn btn-info" role="button">Register here</a>
+
         </a>
+       <hr>
 
 
-            <p style="padding-bottom: 100px;" >Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.</p>
-        </div>
+            <p>Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate. Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.</p>
+   </div></center>
 
 </div>
-    {% endif %}
+
 {% endblock %}

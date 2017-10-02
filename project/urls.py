@@ -20,7 +20,7 @@ urlpatterns = [
 	url(r'^$', hello_views.get_index, name='index'),
     url(r'^contact/$', views.get_contact, name='contact'),
     url(r'^contact_thanks/$', views.get_contact_thanks, name='contact_thanks'),
-
+    url(r'^about/$', hello_views.get_About, name='about'),
 
 
 	url(r'^register/$', accounts_views.register, name='register'),
