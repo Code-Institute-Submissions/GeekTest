@@ -1,0 +1,53 @@
+{% extends "blog/blogbase.html" %}
+
+
+{% block blogtitle %}
+<div class="wrap">
+<div class="container home-apoint">
+<div class="row">
+<div class="col-md-12 home-apoint-text">
+<h2>Blog</h2>
+    <hr>
+</div>
+</div><!--end row-->
+</div><!--end container-->
+</div><!--end wrap-->
+{% endblock %}
+
+
+{% block blogcontent %}
+
+
+<div class="col-md-9">
+
+<div class="row">
+
+{% for post in posts %}
+<article class="col-md-12 blog-post">
+<div class="gal-img">
+<a href="#"><img class="img-responsive" src="/media/{{ post.image}}" alt=""/></a>
+</div>
+    <div class="news-info">{{ post.published_date }} | <strong>Views</strong> {{ post.views }} | <strong>Tag</strong> {{ post.tag }}</div>
+
+    <!--end gal-img-->
+<div>
+<h2 class="title-blog-post"><a href={{ post.id }}>{{ post.title }}</a></h2>
+<p>{{ post.content|truncatewords:57 }}</p>
+</div>
+<div class="read-more"><a href={{ post.id }}>Read More</a></div>
+<br>
+    <br>
+    <hr>
+</article><!--col-md-12-->
+
+{% endfor %}
+
+
+
+</div><!--end row-->
+
+
+
+</div><!--end col-md-9-->
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "blog/blogbase.html" %}
+{% load staticfiles %}
+
+{% block blogtitle %}
+
+<div class="wrap">
+<div class="container home-apoint">
+<div class="row">
+<div class="col-md-12 home-apoint-text">
+<h2>{{ post.title }}</h2>
+</div>
+</div><!--end row-->
+</div><!--end container-->
+</div><!--end wrap-->
+
+{% endblock %}
+
+{% block blogcontent %}
+
+<article class="col-md-9 blog-post-single">
+{% if post.image %}
+    <div class="gal-img">
+    <img class="img-responsive" src="/media/{{ post.image}}" alt=""/>
+    </div><!--end gal-img-->
+{% endif %}
+<div class="news-info">{{ post.published_date }} | Views {{ post.views }} <a href="#">{{ post.tag }}</a></div>
+<div class="content">
+<h2 class="title-blog-post">{{ post.title }}</h2>
+
+<p>{{ post.content|linebreaks }}</p>
+
+{% load disqus_tags %}
+{% set_disqus_title post.title %}
+{% disqus_show_comments %}
+
+</div><!--end content-->
+</article><!--col-md-9-->
+
+
+{% endblock %}
