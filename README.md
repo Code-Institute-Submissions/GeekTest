@@ -1,3 +1,2 @@
-# GeekShopTest
 # GeekShop
 # GeekTest
