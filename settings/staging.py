@@ -1,22 +1,22 @@
 from base import *
+import dj_database_url
 
 DEBUG = False
 
+
+# Load the ClearDB connection details from the environment variable
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
 
 
 
 # Paypal environment variables
-PAYPAL_NOTIFY_URL = 'http://geekshtop.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'http://geekstuff.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'http://geeknshtuff@outlook.com'
 
-SITE_URL = 'https://geekshtop.herokuapp.com'
-ALLOWED_HOSTS.append('geekshtop.herokuapp.com')
+SITE_URL = 'https://geekstuff.herokuapp.com'
+ALLOWED_HOSTS.append('geekstuff.herokuapp.com')
 
 # Log DEBUG information to the console
 LOGGING = {
