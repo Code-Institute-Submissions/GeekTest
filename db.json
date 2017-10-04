@@ -9,18 +9,18 @@
 },
 {
     "model": "sessions.session",
-    "pk": "268a5duwixk8h0zeckuvzuv2skignc24",
-    "fields": {
-        "session_data": "NjFiOGMxNzdkMzM0Y2RjNmZmOWMwZmVhZGMxM2JkZTI0N2ZjNDlhNTp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc4MDU3ODFiMjA4Yjg5Zjg5YTAyMzVkMDBlNTUwOTUxMTBlOGFjNjciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
-        "expire_date": "2017-10-18T13:13:19.878Z"
-    }
-},
-{
-    "model": "sessions.session",
     "pk": "a0bokoy0x2cj133cytkzzse3ltvfyl3b",
     "fields": {
         "session_data": "MDg2ZjRjY2MxODE1ZDIzZDI5MDJmZTJhZTQzNmY5YWJkM2VjNjE5Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjJjOWMzYTY1MTc0ZjhjZmY3OWI5ZDg3YTQ3OTEyNDllMjZmNDc5OWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
         "expire_date": "2017-10-12T14:39:34.924Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fng7a783rnqjlnapbq676vrc6quf1u2f",
+    "fields": {
+        "session_data": "MzEzZGMwNzgwNGY2ZjA5NjJmMTU1MDIxOTQ0Zjc0ZTJlYzdhZjA2YTp7Il9hdXRoX3VzZXJfaGFzaCI6ImRlM2EwNmQxMWRhNmJmMDQ0YWZhNTVmMjEwMDc1ZWEwNDU5MTFlZGYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
+        "expire_date": "2017-10-18T14:57:07.791Z"
     }
 },
 {
@@ -319,7 +319,7 @@
     "pk": 14,
     "fields": {
         "password": "pbkdf2_sha256$36000$awwta6X4xafF$jvtYyKrOPGR6gREkGg25963faq4PRgf4d8JQ6nWKuQo=",
-        "last_login": "2017-10-04T13:13:19.876Z",
+        "last_login": "2017-10-04T14:57:07.788Z",
         "is_superuser": true,
         "username": "admin@gmail.com",
         "first_name": "",
@@ -2412,6 +2412,42 @@
         "object_repr": "Phone",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2017-10-04T13:16:52.065Z",
+        "user": [
+            "admin@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "thing 1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2017-10-04T13:17:07.929Z",
+        "user": [
+            "admin@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "thing 1",
+        "action_flag": 3,
+        "change_message": ""
     }
 }
 ]
