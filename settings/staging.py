@@ -12,11 +12,11 @@ DATABASES = {
 
 
 # Paypal environment variables
-PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
-PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
+PAYPAL_NOTIFY_URL = 'geekshtop.herokuapp.com'
+PAYPAL_RECEIVER_EMAIL = 'geeknshtuff@outlook.com'
 
-SITE_URL = 'https://your-heroku-app.herokuapp.com'
-ALLOWED_HOSTS.append('your-heroku-app.herokuapp.com')
+SITE_URL = 'https://geekshtop.herokuapp.com'
+ALLOWED_HOSTS.append('geekshtop.herokuapp.com')
 
 # Log DEBUG information to the console
 LOGGING = {
