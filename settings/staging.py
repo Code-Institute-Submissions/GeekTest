@@ -11,7 +11,7 @@ DATABASES = {
 
 
 # Paypal environment variables
-PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL = 'https://geekshtop.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'geeknshtuff@outlook.com'
 
 SITE_URL = 'https://geekshtop.herokuapp.com'

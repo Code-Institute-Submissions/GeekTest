@@ -9,6 +9,14 @@
 },
 {
     "model": "sessions.session",
+    "pk": "268a5duwixk8h0zeckuvzuv2skignc24",
+    "fields": {
+        "session_data": "NjFiOGMxNzdkMzM0Y2RjNmZmOWMwZmVhZGMxM2JkZTI0N2ZjNDlhNTp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc4MDU3ODFiMjA4Yjg5Zjg5YTAyMzVkMDBlNTUwOTUxMTBlOGFjNjciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
+        "expire_date": "2017-10-18T13:13:19.878Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "a0bokoy0x2cj133cytkzzse3ltvfyl3b",
     "fields": {
         "session_data": "MDg2ZjRjY2MxODE1ZDIzZDI5MDJmZTJhZTQzNmY5YWJkM2VjNjE5Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjJjOWMzYTY1MTc0ZjhjZmY3OWI5ZDg3YTQ3OTEyNDllMjZmNDc5OWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
@@ -21,14 +29,6 @@
     "fields": {
         "session_data": "NmMxMzE5YTUyZjgxNzZmNzdjZWNiNmI2OTY1MWEwODk1ZDNiNWZkYjp7Il9hdXRoX3VzZXJfaGFzaCI6IjJjOWMzYTY1MTc0ZjhjZmY3OWI5ZDg3YTQ3OTEyNDllMjZmNDc5OWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxNCJ9",
         "expire_date": "2017-08-24T11:21:15.077Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "lgpzfy2tpqoqgu55f5k3vcuidbni4v40",
-    "fields": {
-        "session_data": "NjFiOGMxNzdkMzM0Y2RjNmZmOWMwZmVhZGMxM2JkZTI0N2ZjNDlhNTp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc4MDU3ODFiMjA4Yjg5Zjg5YTAyMzVkMDBlNTUwOTUxMTBlOGFjNjciLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
-        "expire_date": "2017-10-18T12:23:02.647Z"
     }
 },
 {
@@ -319,7 +319,7 @@
     "pk": 14,
     "fields": {
         "password": "pbkdf2_sha256$36000$awwta6X4xafF$jvtYyKrOPGR6gREkGg25963faq4PRgf4d8JQ6nWKuQo=",
-        "last_login": "2017-10-04T12:23:02.645Z",
+        "last_login": "2017-10-04T13:13:19.876Z",
         "is_superuser": true,
         "username": "admin@gmail.com",
         "first_name": "",
@@ -400,6 +400,24 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2017-10-03T14:33:56.179Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 19,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$kfnTch88QYiF$VrIKOyx5K1ivGtJfut2xiuO8CTUtla7XlfNl6Jt4ExI=",
+        "last_login": "2017-10-04T13:13:15.451Z",
+        "is_superuser": false,
+        "username": "josephineryan@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "josephineryan@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-10-04T13:13:09.810Z",
         "groups": [],
         "user_permissions": []
     }
