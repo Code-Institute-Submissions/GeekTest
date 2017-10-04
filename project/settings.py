@@ -152,8 +152,8 @@ AUTHENTICATION_BACKENDS = (
     'accounts.backends.EmailAuth',
 )
 
-SITE_URL = 'geekshtop.herokuapp.com'
-PAYPAL_NOTIFY_URL =  'geekshtop.herokuapp.com'
+SITE_URL = 'http://127.0.0.1:8000'
+PAYPAL_NOTIFY_URL = 'http://cbbd8856.ngrok.io/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'geeknshtuff@outlook.com'
 
 INTERNAL_IPS = ('127.0.0.1',)
