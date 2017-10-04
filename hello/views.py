@@ -18,3 +18,7 @@ def get_contact_thanks(request):
 def get_About(request):
    return render(request, 'About/About.html')
 
+# Get About page
+def get_products(request):
+   return render(request, 'products/products.html')
+

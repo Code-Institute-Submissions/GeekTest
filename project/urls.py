@@ -31,10 +31,12 @@ urlpatterns = [
 
 
 
+
     url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
     url(r'^paypal-return', paypal_views.paypal_return),
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
     url(r'^products/$', product_views.all_products),
+    url(r'^products/$', hello_views.get_products, name='products'),
 
 
     # Blog URLs
