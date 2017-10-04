@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: Enter your own SECRET_KEY here
 SECRET_KEY = 'mykey'
 
-ALLOWED_HOSTS = ['127.0.0.1','cbbd8856.ngrok.io', 'geekstuff.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','cbbd8856.ngrok.io', ]
 SITE_ID = 2
 
 # Application definition
@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+
 ]
 
 ROOT_URLCONF = 'project.urls'
