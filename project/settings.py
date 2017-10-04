@@ -25,7 +25,7 @@ SECRET_KEY = ')y5h(*co^njg2iod5tdptuu1p-8)-lghy18oi8pbj((&28+8c6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','cbbd8856.ngrok.io']
+ALLOWED_HOSTS = ['127.0.0.1','cbbd8856.ngrok.io', 'geekshtop.herokuapp.com']
 
 
 # Application definition
@@ -152,8 +152,8 @@ AUTHENTICATION_BACKENDS = (
     'accounts.backends.EmailAuth',
 )
 
-SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://cbbd8856.ngrok.io/a-very-hard-to-guess-url/'
+SITE_URL = 'http://127.0.0.1:8000', 'geekshtop.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'http://cbbd8856.ngrok.io/a-very-hard-to-guess-url/', 'geekshtop.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'geeknshtuff@outlook.com'
 
 INTERNAL_IPS = ('127.0.0.1',)
