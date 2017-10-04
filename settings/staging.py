@@ -1,5 +1,4 @@
 from base import *
-import dj_database_url
 
 DEBUG = False
 
@@ -10,11 +9,28 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse(CLEAR_DB_URL)
+
 
 # Paypal environment variables
-PAYPAL_NOTIFY_URL = 'https://geekshtop.herokuapp.com'
-PAYPAL_RECEIVER_EMAIL = 'geeknshtuff@outlook.com'
+PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
+PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
 
+SITE_URL = 'https://your-heroku-app.herokuapp.com'
+ALLOWED_HOSTS.append('your-heroku-app.herokuapp.com')
 
-
+# Log DEBUG information to the console
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+        },
+    },
+}
