@@ -12,8 +12,8 @@ DATABASES = {
 
 
 # Paypal environment variables
-PAYPAL_NOTIFY_URL = 'geekshtop.herokuapp.com'
-PAYPAL_RECEIVER_EMAIL = 'geeknshtuff@outlook.com'
+PAYPAL_NOTIFY_URL = 'http://geekshtop.herokuapp.com'
+PAYPAL_RECEIVER_EMAIL = 'http://geeknshtuff@outlook.com'
 
 SITE_URL = 'https://geekshtop.herokuapp.com'
 ALLOWED_HOSTS.append('geekshtop.herokuapp.com')
