@@ -18,7 +18,15 @@ def get_contact_thanks(request):
 def get_About(request):
    return render(request, 'About/About.html')
 
-# Get About page
+# Get product page
 def get_products(request):
    return render(request, 'products/products.html')
+
+# Get product page
+def get_paypal_cancel(request):
+   return render(request, 'paypal/paypal_cancel.html')
+
+# Get product page
+def get_paypal_return(request):
+   return render(request, 'paypal/paypal_return.html')
 
