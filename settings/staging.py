@@ -15,7 +15,7 @@ DATABASES = {
 PAYPAL_NOTIFY_URL = 'http://geekstuff.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'http://geeknshtuff@outlook.com'
 
-SITE_URL = 'geekstuff.herokuapp.com'
+SITE_URL = 'http://geekstuff.herokuapp.com'
 ALLOWED_HOSTS.append('geekstuff.herokuapp.com')
 
 # Log DEBUG information to the console
