@@ -1,7 +1,7 @@
 from base import *
 import dj_database_url
 
-DEBUG = TRUE
+DEBUG = True
 
 
 # Load the ClearDB connection details from the environment variable
