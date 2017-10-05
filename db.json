@@ -25,10 +25,10 @@
 },
 {
     "model": "sessions.session",
-    "pk": "nlpxdm6hyc3inezbk1zonbilxxnipy5o",
+    "pk": "sr7iq9p5ox7q357oa9oxbovcd40ufhgz",
     "fields": {
-        "session_data": "YTBiM2JiM2NhZWRjYjUyMjA4YzFjZmQ3ZjM1M2U4Mjg0MmJkYjljNjp7Il9hdXRoX3VzZXJfaGFzaCI6ImRlM2EwNmQxMWRhNmJmMDQ0YWZhNTVmMjEwMDc1ZWEwNDU5MTFlZGYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxNCJ9",
-        "expire_date": "2017-10-19T13:23:56.950Z"
+        "session_data": "MDg2ZjRjY2MxODE1ZDIzZDI5MDJmZTJhZTQzNmY5YWJkM2VjNjE5Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjJjOWMzYTY1MTc0ZjhjZmY3OWI5ZDg3YTQ3OTEyNDllMjZmNDc5OWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
+        "expire_date": "2017-10-19T13:32:11.271Z"
     }
 },
 {
@@ -311,7 +311,7 @@
     "pk": 14,
     "fields": {
         "password": "pbkdf2_sha256$36000$awwta6X4xafF$jvtYyKrOPGR6gREkGg25963faq4PRgf4d8JQ6nWKuQo=",
-        "last_login": "2017-10-05T13:23:56.948Z",
+        "last_login": "2017-10-05T13:32:11.257Z",
         "is_superuser": true,
         "username": "admin@gmail.com",
         "first_name": "",
