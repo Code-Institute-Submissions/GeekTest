@@ -702,24 +702,7 @@
         "change_message": "[{\"added\": {}}]"
     }
 },
-{
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-        "action_time": "2017-08-11T10:43:56.378Z",
-        "user": [
-            "admin@gmail.com"
-        ],
-        "content_type": [
-            "magazines",
-            "magazine"
-        ],
-        "object_id": "1",
-        "object_repr": "geek magazine 001",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
+
 {
     "model": "admin.logentry",
     "pk": 11,
