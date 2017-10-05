@@ -4,7 +4,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 
 # SECURITY WARNING: Enter your own SECRET_KEY here
 SECRET_KEY = 'mykey'
@@ -107,3 +107,5 @@ TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
