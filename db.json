@@ -25,10 +25,10 @@
 },
 {
     "model": "sessions.session",
-    "pk": "s15u4s0ffqimy2dhlxg4njbqw7qey4yv",
+    "pk": "nlpxdm6hyc3inezbk1zonbilxxnipy5o",
     "fields": {
-        "session_data": "MzEzZGMwNzgwNGY2ZjA5NjJmMTU1MDIxOTQ0Zjc0ZTJlYzdhZjA2YTp7Il9hdXRoX3VzZXJfaGFzaCI6ImRlM2EwNmQxMWRhNmJmMDQ0YWZhNTVmMjEwMDc1ZWEwNDU5MTFlZGYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
-        "expire_date": "2017-10-18T17:09:55.593Z"
+        "session_data": "YTBiM2JiM2NhZWRjYjUyMjA4YzFjZmQ3ZjM1M2U4Mjg0MmJkYjljNjp7Il9hdXRoX3VzZXJfaGFzaCI6ImRlM2EwNmQxMWRhNmJmMDQ0YWZhNTVmMjEwMDc1ZWEwNDU5MTFlZGYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxNCJ9",
+        "expire_date": "2017-10-19T13:23:56.950Z"
     }
 },
 {
@@ -45,14 +45,6 @@
     "fields": {
         "session_data": "MDg2ZjRjY2MxODE1ZDIzZDI5MDJmZTJhZTQzNmY5YWJkM2VjNjE5Mjp7Il9hdXRoX3VzZXJfaGFzaCI6IjJjOWMzYTY1MTc0ZjhjZmY3OWI5ZDg3YTQ3OTEyNDllMjZmNDc5OWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMTQifQ==",
         "expire_date": "2017-10-09T12:05:48.627Z"
-    }
-},
-{
-    "model": "sites.site",
-    "pk": 1,
-    "fields": {
-        "domain": "example.com",
-        "name": "example.com"
     }
 },
 {
@@ -319,7 +311,7 @@
     "pk": 14,
     "fields": {
         "password": "pbkdf2_sha256$36000$awwta6X4xafF$jvtYyKrOPGR6gREkGg25963faq4PRgf4d8JQ6nWKuQo=",
-        "last_login": "2017-10-04T17:09:55.591Z",
+        "last_login": "2017-10-05T13:23:56.948Z",
         "is_superuser": true,
         "username": "admin@gmail.com",
         "first_name": "",
@@ -543,7 +535,7 @@
         "content": "Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.\r\n\r\nPerpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.\r\n\r\nPerpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.Perpetual sincerity out suspected necessary one but provision satisfied. Respect nothing use set waiting pursuit nay you looking. If on prevailed concluded ye abilities. Address say you new but minuter greater. Do denied agreed in innate.",
         "created_date": "2017-09-25T17:23:25.787Z",
         "published_date": "2017-09-25T17:23:18Z",
-        "views": 13,
+        "views": 14,
         "tag": "Technology",
         "image": "images/tech004_dkEoWfd.jpg"
     }
@@ -2542,6 +2534,24 @@
         ],
         "object_id": "4",
         "object_repr": "thing 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2017-10-05T13:25:15.249Z",
+        "user": [
+            "admin@gmail.com"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1",
+        "object_repr": "example.com",
         "action_flag": 3,
         "change_message": ""
     }
