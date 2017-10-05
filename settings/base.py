@@ -25,7 +25,7 @@ INSTALLED_APPS = [
     'blog',
     'emoticons',
     'disqus',
-
+    'tinymce',
     'accounts',
     'paypal_store',
     'products',
