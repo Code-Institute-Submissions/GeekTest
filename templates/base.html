@@ -11,6 +11,17 @@
      <link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0/css/font-awesome.css' %}">
   <link href="../static/css/font-awesome-4.7.0/css/style1.css" rel="stylesheet">
     {% block head_js %}{% endblock %}
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+</style>
 </head>
 <body>
 
@@ -67,13 +78,13 @@
    </div>
    <hr>
 
-<footer>
-<div class="container">
-  <div class="panel panel-default">
-    <div class="panel-body">Panel Content</div>
-  </div>
+
+<div class="footer">
+  <p>Footer</p>
 </div>
-</footer>
+
+
+
 
 
 </div>
