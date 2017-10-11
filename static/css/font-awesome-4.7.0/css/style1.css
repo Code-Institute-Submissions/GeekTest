@@ -1,19 +1,9 @@
-footer {
-  background: white;
-  padding: 10px 0;
-  text-align: center;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
 }
-footer a {
-  color: #70726F;
-  font-size: 20px;
-  padding: 10px;
-  border-right: 1px solid #70726F;
-  transition: all .5s ease;
-}
-footer a:first-child {
-  border-left: 1px solid #70726F;
-}
-footer a:hover {
-  color: white;
-}
-
