@@ -1,11 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>Success!</h2>
-   <p> You are logged in as {{ user.email }} and you most recently logged in at {{ user.last_login }}. </p>
+    <center>  <h2>Success!</h2>
+        <p> You are logged in as {{ user.email }} and you most recently logged in at {{ user.last_login }}. </p></center>
+
+     <div class="col-lg-6">
+  <div class="panel panel-default">
+    <div class="panel-body">
+        <center><p>You are now registered click here to view our products.</p></center>
+
+    <a href="{% url 'products' %}" class="btn btn-primary btn-xs col-lg-12" style="margin-bottom:4px;white-space: normal;">Products</a>
 
 
+    </div>
+  </div>
+</div>
 
+ <div class="col-lg-6">
+  <div class="panel panel-default">
+    <div class="panel-body">
+        <center><p>You are now registered click here to view our blog.</p></center>
+
+<a href="/blog/" class="btn btn-primary btn-xs col-lg-12" style="margin-bottom:4px;white-space: normal;">Blog</a>
+
+
+    </div>
+  </div>
+</div>
 
 
 
