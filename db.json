@@ -414,24 +414,7 @@
         "user_permissions": []
     }
 },
-{
-    "model": "accounts.user",
-    "pk": 20,
-    "fields": {
-        "password": "pbkdf2_sha256$36000$WqpkyC9bSbSk$oJE/hoz9lInQuIqvu2wMK2nmFGauaXpmQ45UXCR9lxo=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "michael@gmail.com",
-        "first_name": "",
-        "last_name": "",
-        "email": "michael@gmail.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2017-10-09T17:26:21.824Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
+
 {
     "model": "products.product",
     "pk": 1,
