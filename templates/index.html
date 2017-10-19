@@ -2,7 +2,14 @@
 {% load staticfiles %}
 {% block content %}
 
+<script>
+function blinker() {
+    $('.blink_me').fadeOut(500);
+    $('.blink_me').fadeIn(500);
+}
 
+setInterval(blinker, 2000); //Runs every second
+</script>
 
   <div class="container">
 
@@ -58,7 +65,7 @@
     <div class="panel-body">
         <center><h3>Register Here</h3></center>
 
-    <a href="{% url 'register' %}" class="btn btn-primary btn-xs col-lg-12" style="margin-bottom:4px;white-space: normal;">Register Here</a>
+    <a href="{% url 'register' %}" class="btn btn-primary btn-xs col-lg-12 blink_me" style="margin-bottom:4px;white-space: normal;">Register Here</a>
 
 
            </div>
