@@ -5,23 +5,8 @@
    <p> You are logged in as {{ user.email }} and you most recently logged in at {{ user.last_login }}. </p>
 
 
-<style>
-.blink_me {
 
 
-    animation-name: blinker;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-@keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
-</style>
 
-
-<span class="blink_me">This Will Blink</span>
 
 {% endblock %}
