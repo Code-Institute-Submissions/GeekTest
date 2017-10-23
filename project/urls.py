@@ -15,6 +15,7 @@ from django.views.static import serve
 
 urlpatterns = [
 
+    # static about contact
 	url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
 	url(r'^$', hello_views.get_index, name='index'),
@@ -22,7 +23,7 @@ urlpatterns = [
     url(r'^contact_thanks/$', views.get_contact_thanks, name='contact_thanks'),
     url(r'^about/$', hello_views.get_About, name='about'),
 
-
+    # accounts
 	url(r'^register/$', accounts_views.register, name='register'),
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
@@ -31,7 +32,7 @@ urlpatterns = [
 
 
 
-
+    # paypal URLs
     url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
     url(r'^paypal-return', paypal_views.paypal_return),
     url(r'^paypal-cancel', paypal_views.paypal_cancel),

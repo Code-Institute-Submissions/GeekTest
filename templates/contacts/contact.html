@@ -3,13 +3,33 @@
 {% block content %}
 
 <center><h2>Contact</h2></center>
+    <style>
 
-<br>
+    #map {
+        height:250px;
+        width: 100%;
+    }
 
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    </style>
 
+    <div id="map"></div>
 
-<br>
+    <script>
+    function initMap() {
+        var location = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+
+    }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmBdaEfN7eQsUBq5nQuY3R1SI_KKKuwhU&callback=initMap"></script>
 
     <hr>
     <form id="contact-form" method="post" role="form">
