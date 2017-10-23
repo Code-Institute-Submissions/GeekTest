@@ -169,6 +169,6 @@ DISQUS_WEBSITE_SHORTNAME = 'geekshop'
 SITE_ID = 2
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'stephen.ryan11@gmail.com'
+EMAIL_HOST_USER = 'geekgeek659@gmail.com'
 EMAIL_HOST_PASSWORD = 'Gutantag1'
 EMAIL_PORT = 587
