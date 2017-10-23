@@ -6,8 +6,6 @@ from accounts.forms import UserRegistrationForm, UserLoginForm
 from django.contrib.auth.decorators import login_required
 
 
-
-
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
@@ -68,3 +66,5 @@ def logout(request):
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
     return redirect(reverse('index'))
+
+
