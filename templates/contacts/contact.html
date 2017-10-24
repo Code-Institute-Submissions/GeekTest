@@ -88,10 +88,10 @@
         </div>
 -->
 
-{% block title %}Contact - {{ block.super }}{% endblock %}
+{% block title %}{{ block.super }}{% endblock %}
 
 
-<h1>Contact</h1>
+
 <form role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}

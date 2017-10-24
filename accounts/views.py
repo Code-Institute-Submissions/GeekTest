@@ -85,26 +85,27 @@ def logout(request):
 def contact(request):
     form_class = ContactForm
 
-    # new logic!
     if request.method == 'POST':
         form = form_class(data=request.POST)
 
         if form.is_valid():
-            contact_name = form.cleaned_data.get("email")
-            contact_email = request.POST.get('contact_email' , '')
-            form_content = request.POST.get('content', '')
 
-            subject = "Thanks for the email"
+            contact_email = request.POST.get('contact_email' , '')
+
+
+            subject = "Thanks for the email, We will get back to you soon."
             from_email = settings.EMAIL_HOST_USER
             to_email = [contact_email]
             message = """welcome"""
-            send_mail(subject=subject, from_email=from_email, recipient_list=to_email, message=message, fail_silently=True)
+            send_mail(subject=subject, from_email=from_email, recipient_list=to_email, message=message, fail_silently=False)
 
             return redirect('contact_thanks')
 
     return render(request, 'contacts/contact.html', {
         'form': form_class,
     })
+
+
 
 
 

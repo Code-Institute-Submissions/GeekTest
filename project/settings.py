@@ -169,11 +169,12 @@ DISQUS_WEBSITE_SHORTNAME = 'geekshop'
 SITE_ID = 2
 
 
-EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = "geekgeek659@gmail.com"
-EMAIL_HOST_PASSWROD = "Gutantag1"
-EMAIL_POST = 587
+EMAIL_HOST_PASSWORD = "Gutantag1"
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 
