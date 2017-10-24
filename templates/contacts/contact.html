@@ -32,69 +32,15 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmBdaEfN7eQsUBq5nQuY3R1SI_KKKuwhU&callback=initMap"></script>
 
     <hr>
-    <!--
-    <form id="contact-form" method="post" role="form">
 
-    <div class="messages"></div>
 
-    <div class="controls">
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name">Firstname</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname" required>
-
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_lastname">Lastname</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname" required>
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required>
-
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_phone">Phone</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required></textarea>
-
-                </div>
-            </div>
-        </div>
-            <div class="col-md-12">
-                <a class="btn btn-primary"  href="/contact_thanks/">Send Message</a>
-                <br>
-            </div>
-
-        </div>
--->
-
-{% block title %}{{ block.super }}{% endblock %}
 
 
 
 <form role="form" action="" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form| as_bootstrap }}
     <button type="submit">Submit</button>
 </form>
 
