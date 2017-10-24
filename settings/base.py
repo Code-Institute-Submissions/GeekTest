@@ -109,3 +109,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 DISQUS_WEBSITE_SHORTNAME = 'bootcampblog'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "geekgeek659@gmail.com"
+EMAIL_HOST_PASSWORD = "Gutantag1"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+"""
+http://accounts.google.com/displayunlockcaptcha
+"""
