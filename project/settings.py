@@ -173,7 +173,7 @@ SITE_ID = 2
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = "geekgeek659@gmail.com"
-EMAIL_HOST_PASSWORD = "Gutantag1"
+EMAIL_HOST_PASSWORD = "rugbyball"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
