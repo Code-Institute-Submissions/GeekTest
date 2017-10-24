@@ -1,10 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
+  <div class="panel panel-default">
+    <div class="panel-body">
+        <center><p>Dear, {{ user.email }} you have cancelled your purchase of this product. To view more products continue below.</p></center>
 
-<marquee>Dear {{ user.email }} you've cancelled the purchase of this item!</marquee>
+        <center> <a href="{% url 'products' %}" class="btn btn-primary btn-xs col-lg-12" style="margin-bottom:4px;white-space: normal;">Products</a></center>
 
 
-
+    </div>
+  </div>
+</div>
 {% endblock %}
 
