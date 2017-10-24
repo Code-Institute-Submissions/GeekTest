@@ -168,3 +168,16 @@ DISQUS_WEBSITE_SHORTNAME = 'geekshop'
 
 SITE_ID = 2
 
+
+EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "geekgeek659@gmail.com"
+EMAIL_HOST_PASSWROD = "Gutantag1"
+EMAIL_POST = 587
+EMAIL_USE_TLS = True
+
+
+"""
+http://accounts.google.com/displayunlockcaptcha
+"""
+

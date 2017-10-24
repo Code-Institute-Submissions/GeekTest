@@ -5,6 +5,14 @@ from django.template.context_processors import csrf
 from accounts.forms import UserRegistrationForm, UserLoginForm
 from django.contrib.auth.decorators import login_required
 
+from django.conf import settings
+from accounts.forms import ContactForm
+from django.core.mail import EmailMessage
+from django.core.mail import send_mail
+
+from django.template.loader import get_template
+
+
 
 def register(request):
     if request.method == 'POST':
@@ -21,8 +29,14 @@ def register(request):
                 messages.success(request, "You have successfully registered")
                 return redirect(reverse('profile'))
 
+
+
+
             else:
                 messages.error(request, "unable to log you in at this time!")
+
+
+
 
     else:
         form = UserRegistrationForm()
@@ -66,5 +80,31 @@ def logout(request):
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
     return redirect(reverse('index'))
+
+
+def contact(request):
+    form_class = ContactForm
+
+    # new logic!
+    if request.method == 'POST':
+        form = form_class(data=request.POST)
+
+        if form.is_valid():
+            contact_name = form.cleaned_data.get("email")
+            contact_email = request.POST.get('contact_email' , '')
+            form_content = request.POST.get('content', '')
+
+            subject = "Thanks for the email"
+            from_email = settings.EMAIL_HOST_USER
+            to_email = [contact_email]
+            message = """welcome"""
+            send_mail(subject=subject, from_email=from_email, recipient_list=to_email, message=message, fail_silently=True)
+
+            return redirect('contact_thanks')
+
+    return render(request, 'contacts/contact.html', {
+        'form': form_class,
+    })
+
 
 

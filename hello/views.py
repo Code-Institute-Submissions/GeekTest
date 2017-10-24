@@ -8,10 +8,6 @@ from django.shortcuts import render
 def get_index(request):
     return render(request, 'index.html')
 
-# Get Contact Page
-def get_contact(request):
-
-   return render(request, 'contacts/contact.html')
 
 
 # Get Contact Thank You Page

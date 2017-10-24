@@ -19,9 +19,10 @@ urlpatterns = [
 	url(r'^admin/', admin.site.urls),
     url(r'^$', views.get_index),
 	url(r'^$', hello_views.get_index, name='index'),
-    url(r'^contact/$', views.get_contact, name='contact'),
+
     url(r'^contact_thanks/$', views.get_contact_thanks, name='contact_thanks'),
     url(r'^about/$', hello_views.get_About, name='about'),
+    url(r'^contact/$', accounts_views.contact, name='contact'),
 
     # accounts
 	url(r'^register/$', accounts_views.register, name='register'),
