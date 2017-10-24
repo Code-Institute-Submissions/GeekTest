@@ -11,7 +11,28 @@
      <link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0/css/font-awesome.css' %}">
 <link rel="stylesheet" href="{% static "css/style1.css" type="text/css" %}">
     {% block head_js %}{% endblock %}
+    <style>
+        footer {
+  background: white;
+  padding: 10px 0;
+  text-align: center;
+}
+footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+footer a:hover {
+  color: blue;
+}
 
+
+    </style>
 </head>
 <body>
 
@@ -69,16 +90,24 @@
    <hr>
 
 
-<center
-><footer>
-  <p>Contact information: <a href="mailto:geeknshtuff@outlook.com">geeknshtuff@outlook.com</a>.</p>
-</footer>
-</center>
+
 
 
 
 
 </div>
+<footer>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-google-plus"></i></a>
+  <a href="#"><i class="fa fa-skype"></i></a>
+</footer>
+
+
+
+
+
 </body>
 <!-- script references -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
