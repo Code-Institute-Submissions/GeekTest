@@ -23,8 +23,10 @@ The design is the weakest part of the project. The main part of the design is to
 
 ## Issues Faced
 
-- Getting the Email on the conatct page set up.
-- Deploying to heroku, this process 
+- Getting the Email on the conatct page set up. This took alot of trial and error locking me out of a couple of email addresses in the process. 
+
+- Deploying to heroku. This process took longer then i would have liked, in hindsight I should have deployed first instead of last. 
+
 - Getting images on the products page. 
 
 ## Issues still to finish
