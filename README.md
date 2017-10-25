@@ -1,2 +1,5 @@
 # GeekShop - Stream 3 - Full Stack Development
-https://geekstuff.herokuapp.com/
+
+## Deployment
+
+This project is deployed at Heroku here https://geekstuff.herokuapp.com/. 
